@@ -1,3 +1,191 @@
 * {
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #2f1a3d;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mainContainer {
+    padding: 2rem;
+    background-color: white;
+    flex-grow: 1;
+}
+
+h3 {
+    color: #1c0c2e;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    color: #1c0c2e;
+    margin: 1rem 0 0.5rem;
+}
+
+.inputForm {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputForm label {
+    font-weight: 500;
+    color: #444;
+}
+
+.inputForm input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.inputForm input:focus {
+    outline: none;
+    border-color: #a634db;
+    box-shadow: 0 0 5px rgba(67, 28, 90, 0.336);
+}
+
+.chooseForm {
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chooseForm input[type="checkbox"],
+.chooseForm input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #6e3580;
+}
+
+.chooseForm label {
+    margin-right: 1rem;
+    color: #555;
+}
+
+.chooseForm select {
+    padding: 0.5rem;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.commentArea {
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commentArea textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.commentArea textarea:focus {
+    outline: none;
+    border-color: #9e34db;
+    box-shadow: 0 0 5px rgba(51, 18, 66, 0.3);
+}
+
+.commentArea button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    margin-right: 1rem;
+}
+
+.commentArea button:first-child {
+    background-color: #9e34db;
+    color: white;
+}
+
+.commentArea button:last-child {
+    background-color: #7e3ce7;
+    color: white;
+}
+
+.commentArea button:hover {
+    transform: translateY(-2px);
+}
+
+.commentArea button:active {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-top: 4px solid #3498db;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+footer p:first-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+footer p:nth-child(2) {
+    color: #bdc3c7;
+}
+
+footer p:last-child {
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+    .mainContainer {
+        padding: 1rem;
+    }
+
+    .inputForm {
+        grid-template-columns: 1fr;
+    }
 }
